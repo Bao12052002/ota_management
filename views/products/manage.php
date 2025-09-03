@@ -76,7 +76,7 @@
 <script>
     $(function(){
         // Khởi tạo bảng
-        initDataTable('.table-product-mappings', window.location.href, undefined, undefined, 'undefined');
+        initDataTable('.table-product-mappings', window.location.href, undefined, undefined, undefined);
 
         // SỬA LỖI: Thêm validator cho form để đảm bảo dữ liệu hợp lệ trước khi gửi
         appValidateForm($('#mapping-form'), {
