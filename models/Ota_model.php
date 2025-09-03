@@ -292,7 +292,7 @@ class Ota_model extends App_Model
     private function get_mapping_by_code($product_code, $channel_id)
     {
         if (empty($product_code) || empty($channel_id)) { return null; }
-        $this->db->where('TRIM(ota_product_code)', trim($product_code));
+        $this->db->where('TRIM(ota_product_code)', trim($product_code), false);
         $this->db->where('channel_id', $channel_id);
         return $this->db->get('tbl_ota_product_mappings')->row();
     }

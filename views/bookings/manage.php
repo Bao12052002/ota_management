@@ -104,6 +104,6 @@ init_head(); ?>
         }
 
         // Bắt đầu kiểm tra định kỳ mỗi 20 giây (20000 mili giây)
-        setInterval(fetchNewBookings, 2000);
+        setInterval(fetchNewBookings, 20000);
     });
 </script>
